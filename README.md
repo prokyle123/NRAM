@@ -6,6 +6,49 @@
 
 **NRAM** is a modular network auditing and brute-force tool that allows sequential execution of various scanning and brute-forcing modules. It provides real-time status updates via a web-based UI, making it easy to monitor the progress of each task. This tool is designed to target common network services such as FTP, SSH, RDP, SMB, and others, with each module handling its own scanning and attack logic.
 
+File Structure: (for now)
+NRAM/
+  modules/
+    ftp.py
+    rdp.py
+    ssh.py
+    smb.py
+    telnet.py
+    http.py
+    dns.py
+    smtp.py
+    pop3.py
+    imap.py
+    snmp.py
+    mysql.py
+    postgres.py
+    mongodb.py
+    redis.py
+    utils.py
+  assets/
+    wordlist.txt
+  data/
+    scan_results.json
+    brute_force_results.json
+  config/
+    settings.yaml
+  webapp/
+    static/
+      css/
+        style.css
+      js/
+        script.js
+    templates/
+      index.html
+      results.html
+    files/
+      webapp.py
+  root_files/
+    multitool.py
+    README.md
+    requirements.txt
+
+
 ## Features
 - **Modular Design**: Each module (FTP, SSH, RDP, SMB, etc.) is self-contained, handling its own scanning and brute-force logic.
 - **Sequential Execution**: Runs modules in sequence to prevent resource conflicts and provide clear, ordered output.
